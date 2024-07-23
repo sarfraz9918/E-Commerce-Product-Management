@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "user1",
+      "password": "password1",
+      "email": "user1@example.com"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "password": "password2",
+      "email": "user2@example.com"
+    },
+    {
+      "id": "fecf",
+      "username": "atiya",
+      "password": "123456789",
+      "email": "atiati@gmail.com"
+    },
+    {
+      "id": "3691",
+      "username": "raju",
+      "password": "raju",
+      "email": "raju@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "name": "Potato",
+      "price": "20",
+      "description": "Fresh Potatoes",
+      "userId": "2",
+      "id": "8d83"
+    },
+    {
+      "id": "07ee",
+      "name": "Tomato",
+      "price": "12",
+      "description": "Ripe Tomatoes",
+      "userId": "fecf"
+    },
+    {
+      "id": "a596",
+      "name": "Onion",
+      "price": "10",
+      "description": "Red Onions",
+      "userId": "fecf"
+    },
+    {
+      "id": "b784",
+      "name": "Carrot",
+      "price": "15",
+      "description": "Organic Carrots",
+      "userId": "3691"
+    },
+    {
+      "id": "2c73",
+      "name": "mango",
+      "price": "23",
+      "description": "quality good",
+      "userId": "1"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "productId": "8d83",
+      "userId": "1",
+      "rating": 5,
+      "comment": "Excellent quality!"
+    },
+    {
+      "id": "r2",
+      "productId": "07ee",
+      "userId": "2",
+      "rating": 4,
+      "comment": "Good but could be fresher."
+    },
+    {
+      "id": "r3",
+      "productId": "a596",
+      "userId": "1",
+      "rating": 3,
+      "comment": "Average quality."
+    },
+    {
+      "id": "r4",
+      "productId": "b784",
+      "userId": "fecf",
+      "rating": 5,
+      "comment": "Very fresh and tasty!"
+    },
+    {
+      "id": "r5",
+      "productId": null,
+      "userId": "3691",
+      "rating": 4,
+      "comment": "Good but a bit pricey."
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f4f4f9;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+.dashboard-header {
+    background: #6a11cb;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Navigation styling */
+.dashboard-nav {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dashboard-nav a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #6a11cb;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dashboard-nav a:hover {
+    background: #6a11cb;
+    color: white;
+}
+
+/* Content area styling */
+.dashboard-content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Styling for Product List */
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-list-item:last-child {
+    border-bottom: none;
+}
+
+.product-details {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.product-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product-details p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.product-actions button {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.product-actions button:hover {
+    background: #5a0db0;
+}
+
+.product-actions button.delete-btn {
+    background: #e74c3c;
+}
+
+.product-actions button.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Styling for Product Form */
+.product-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.product-form input,
+.product-form textarea,
+.product-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-form button {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product-form button:hover {
+    background: #5a0db0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-nav {
+        padding: 0.5rem;
+    }
+
+    .dashboard-nav a {
+        display: block;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .product-form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .dashboard-nav a {
+        font-size: 0.8rem;
+    }
+
+    .product-form input,
+    .product-form textarea,
+    .product-form select {
+        font-size: 0.9rem;
+    }
+}
+
+/* Add this to your existing CSS */
+
+.logout-button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: auto;
+}
+
+.logout-button:hover {
+    background: #c0392b;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-list-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.product-details {
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.product-actions {
+    margin-top: 1rem;
+}
+
+.product-actions button {
+    margin-right: 0.5rem;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.product-reviews {
+    margin-top: 1rem;
+}
+
+.review {
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+}
+
+.add-review-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.add-review-link:hover {
+    text-decoration: underline;
+}
+

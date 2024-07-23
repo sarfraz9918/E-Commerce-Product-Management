@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+}
+
+.landing-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.landing-container h1 {
+    margin-bottom: 2rem;
+}
+
+.landing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    background: white;
+    color: #6a11cb;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #2575fc;
+    color: white;
+}
+
+.login-btn {
+    background: #6a11cb;
+    color: white;
+}
+
+.login-btn:hover {
+    background: white;
+    color: #6a11cb;
+}
+
+.register-btn {
+    background: white;
+    color: #2575fc;
+}
+
+.register-btn:hover {
+    background: #6a11cb;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .landing-container {
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
